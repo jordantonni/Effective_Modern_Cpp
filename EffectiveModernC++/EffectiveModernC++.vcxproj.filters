@@ -37,5 +37,134 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Intro.cpp">
+      <Filter>Source Files\00 Introduction</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 01 Template type deduction.cpp">
+      <Filter>Source Files\01 Deducing Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 04 How to view deduced types.cpp">
+      <Filter>Source Files\01 Deducing Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 03 Decltype.cpp">
+      <Filter>Source Files\01 Deducing Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 02 Auto type deduction.cpp">
+      <Filter>Source Files\01 Deducing Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 05 Prefer auto over explicit type declarations.cpp">
+      <Filter>Source Files\02 Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 06 Explicity typed initializer idiom when auto deduces undersired types.cpp">
+      <Filter>Source Files\02 Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 07 Difference between %28%29 and {} creating objects.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 08 Prefer nullptr over 0 and NULL.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 09 Prefer alias over typedefs.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 10 Prefer scoped enums over unscoped.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 11 Prefer deleted functions over private.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 12 Declare overriding functions as override.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 13 Prefer const_iterators.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 14 Declare functions noexcept if they dont emit exceptions.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 15 Use constexpr when possible.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 16 Make const member functions thread safe.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 17 Special member function generation.cpp">
+      <Filter>Source Files\03 Moving to Modern C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 18 unique_ptr.cpp">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 19 shared_ptr.cpp">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 20 weak_ptr.cpp">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 21 make_unique and make_shared.cpp">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 22 Pimpl idiom special member functions.cpp">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 23 move and forward.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 24 Universal references and rvalue references.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 25 move on rvalues forward on universals.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 26 Dont overload on universal ref.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 27 Alternatives to overloading universal refs.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 28 Reference collapsing.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 29 Assume move ops are not present or cheap.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 30 Perfect forwarding failure cases.cpp">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 31 Avoid default capture modes.cpp">
+      <Filter>Source Files\06 Lambda Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 32 init capture to move objects into closures.cpp">
+      <Filter>Source Files\06 Lambda Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 33 declytype to forward rval refs.cpp">
+      <Filter>Source Files\06 Lambda Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 34 Prefer lambdas over bind.cpp">
+      <Filter>Source Files\06 Lambda Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 35 Prefer task-based to thread-based.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 36 Specify launch async.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 37 Make threads unjoinable on all paths.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 38 Be aware of varying thread handle dtor behavior.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 39 Void futures for one shot event comms.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 40 Use atomic for conc volatile for special mem.cpp">
+      <Filter>Source Files\07 Concurrency API</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 41 Pass by value for copyable params that are cheap to move.cpp">
+      <Filter>Source Files\08 Tweaks</Filter>
+    </ClCompile>
+    <ClCompile Include="Item 42 Emplacement instead of insertion.cpp">
+      <Filter>Source Files\08 Tweaks</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
