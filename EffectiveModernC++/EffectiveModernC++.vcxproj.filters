@@ -5,31 +5,36 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Source Files\00 Introduction">
+      <UniqueIdentifier>{16d0a60c-59b0-4f28-b1cc-40ea5ab06abc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Source Files\01 Deducing Types">
+      <UniqueIdentifier>{0d3dd754-ad3f-41bc-abba-a4470a85200e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02 Auto">
+      <UniqueIdentifier>{77e09cc7-7e04-43a5-9deb-77e9cb9afe8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\03 Moving to Modern C++">
+      <UniqueIdentifier>{7f3315dc-a8e4-4409-becb-15af3e4bd405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\04 Smart Pointers">
+      <UniqueIdentifier>{c4041ef5-55f7-488e-bcc7-dc09bf18c8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\06 Lambda Expressions">
+      <UniqueIdentifier>{a4004e9f-a053-4ea3-bc71-c1fb6bf25dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\07 Concurrency API">
+      <UniqueIdentifier>{e475867e-9694-4fc4-9cb3-439bae81c074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08 Tweaks">
+      <UniqueIdentifier>{5f7e729c-4a75-4270-a995-9bca9343bc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding">
+      <UniqueIdentifier>{df031981-20bd-4711-a012-e765a3d7adee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EffectiveModernC++.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
