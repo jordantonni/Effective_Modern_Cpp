@@ -44,9 +44,9 @@ namespace item07
 
     void test()
     {
-        Widget w1;  // Default ctor
-        Widget w2{};// Init list ctor with empty list
+        Widget w1; // Default ctor
+        Widget w2 {};// Init list ctor with empty list
         Widget w3();// Vexing parse -> declares a function!
-        Widget{{}}; // Calls default ctor, using the braced initializer syntax!
+        Widget { {} }; // Calls default ctor, using the braced initializer syntax!
     }
 }
