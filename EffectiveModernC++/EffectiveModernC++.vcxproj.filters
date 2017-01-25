@@ -167,4 +167,9 @@
       <Filter>Source Files\08 Tweaks</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Raw Pointer Drawbacks.txt">
+      <Filter>Source Files\04 Smart Pointers</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

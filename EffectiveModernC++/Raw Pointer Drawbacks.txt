@@ -1,0 +1,15 @@
+
+
+Cons that Raw Pointers have:
+
+1) Declaration doesn't inform you if it points to single element or array of elements.
+
+2) Declaration doesn't inform you if you are responsible for deleting or not. (No Ownership context)
+
+3) Has no way of telling you how you should destroy the object pointer to. Delete or pass to a function?
+
+4) No way to know if delete or delete[]
+
+5) Hard to ensure delete only called once on all execution paths
+
+6) No way to acertain if pointer is dangling
