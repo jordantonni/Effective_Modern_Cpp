@@ -32,6 +32,9 @@
     <Filter Include="Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding">
       <UniqueIdentifier>{df031981-20bd-4711-a012-e765a3d7adee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\04 Smart Pointers\Item 21 Pimpl">
+      <UniqueIdentifier>{418d7856-bd89-45f7-afbd-ba9341921ed3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -103,9 +106,6 @@
     <ClCompile Include="Item 21 make_unique and make_shared.cpp">
       <Filter>Source Files\04 Smart Pointers</Filter>
     </ClCompile>
-    <ClCompile Include="Item 22 Pimpl idiom special member functions.cpp">
-      <Filter>Source Files\04 Smart Pointers</Filter>
-    </ClCompile>
     <ClCompile Include="Item 23 move and forward.cpp">
       <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
     </ClCompile>
@@ -166,10 +166,21 @@
     <ClCompile Include="Item 42 Emplacement instead of insertion.cpp">
       <Filter>Source Files\08 Tweaks</Filter>
     </ClCompile>
+    <ClCompile Include="Item 22 Pimpl idiom special member functions.cpp">
+      <Filter>Source Files\04 Smart Pointers\Item 21 Pimpl</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Source Files\04 Smart Pointers\Item 21 Pimpl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Raw Pointer Drawbacks.txt">
       <Filter>Source Files\04 Smart Pointers</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Widget.hpp">
+      <Filter>Source Files\04 Smart Pointers\Item 21 Pimpl</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

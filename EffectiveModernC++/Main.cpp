@@ -2,13 +2,13 @@
 #include <memory>
 #include <functional>
 
-namespace item19
+namespace item22
 {
     void test();
 }
 
 int main()
 {
-    item19::test();
+    item22::test();
     return 0;
 }

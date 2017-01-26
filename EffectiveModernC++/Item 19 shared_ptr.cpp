@@ -7,6 +7,9 @@
  *  - dtors decrement count
  *  - copy ctor inc count of rhs item to copy and decrement count of item *this used to hold
  *  - move ctor no effect on count. Sets old to null 
+ *  
+ * No support for arrays
+ *  - std::shared_ptr<T[]> NOT ALLOWED
  * 
  * - Control Block (Dynamically Allocated)
  *  - Holds ref count
@@ -53,7 +56,7 @@ namespace item19
             // If there is another shared_ptr to that same object, they both have their own ref count, so will be deleted twice!
             //            processedItems.emplace_back(this);
 
-            processedItems.emplace_back(shared_from_this());
+            processedItems.emplace_back(shared_from_this()); // This counter acts that and allows this to be added without duplicating control block
         }
     };
 
