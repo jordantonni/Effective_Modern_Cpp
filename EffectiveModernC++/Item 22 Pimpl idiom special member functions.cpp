@@ -26,7 +26,10 @@
  *  - shared_ptr deleter is not part of type, and so deleter can be sorted out at run time
  *
  * SUMMARY:
- *  - 
+ *  - Pimpl idiom decreases build times by removing dependency between class clients and class implementation 
+ *  - use unique_ptr to point to the implementation class
+ *      - declare compiler compiler generated member functions (ctor, dtor, move and copy ops) in implementation file
+ *          - This stops them being implicitly inline, so that the unique_ptr destructor can see the Impl class is a complete type
  */
 
 #include "Widget.hpp"
