@@ -1,4 +1,5 @@
 /*
+ * 
  *
  *
  *
@@ -8,87 +9,61 @@
  */
 #include <iostream>
 #include <string>
+#include <iostream>
 
 namespace item23
 {
-    using namespace std;
-
-
-    void processString(const string& s)
-    {
-        std::cout << "lvalue -> " << s << endl;
-    }
-
-    void processString(string&& s)
-    {
-        std::cout << "rvalue -> " << s << endl;
-    }
-
-
-    template <typename T>
-    void process(T&& param)
-    {
-        //        processString(param);
-        processString(std::forward<T>(param));
-    }
-
-
     class Widget
     {
     public:
-//        template <typename T>
-//        void setName(T&& na)
-//        {
-//            name = na;
-//        }
+        int size;
 
-        void setName(const string& na)
+        Widget(const int si)
+            : size{ si }
         {
-            name = na;
+            std::cout << "Ctor" << std::endl;
         }
 
-        void setName(string&& na)
-        {
+        ~Widget()
+        {};
 
-            name = std::move(na);
+        Widget(const Widget& rhs)
+            : size{ rhs.size }
+        {
+            std::cout << "Copy ctor" << std::endl;
         }
 
-    private:
-        string name;
+        Widget(Widget&& rhs)
+            : size { rhs.size }
+        {
+            std::cout << "Move ctor" << std::endl;
+        }
+
+        Widget& operator=(const Widget& rhs)
+        {
+            if (this != &rhs)
+            {
+                size = rhs.size;
+            }
+            std::cout << "Copy assignment" << std::endl;
+            return *this;
+        }
     };
 
-    void foobar(string s)
+    Widget foo(Widget& w)
     {
-        s = "foobar'd";
-    }
+        std::cout << "foo()" << std::endl;
+        w.size = 1337;
+        Widget retVal { w.size };
 
-    template<typename T>
-    void setSign(T&& text)
-    {
-        foobar(text);
-    }
-
-    void u(string s)
-    {
-        s = "hehe";
-        int x;
-    }
-    void t(const string& s)
-    {
-        u(s);
+        return retVal;
     }
 
 
     void test()
     {
-//        string s { "text" };
-        //        process(s);
-        //        process(std::move(s));
+        Widget w1 { 10 };
 
-        string me{"Jay"};
-        t(me);
-        
-
-
+        foo(w1);
     }
 }

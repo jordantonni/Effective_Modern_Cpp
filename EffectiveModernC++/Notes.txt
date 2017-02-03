@@ -1,0 +1,22 @@
+rvalue:
+	Object that can't be assigned to.
+	Has a temporary lifetime that ends when the statement it is contained within is over.
+	Can be moved from.
+
+Move Semantics:
+	move ctor and move assignment operator.
+	Work with rvalues to allow moving of values from one object to another.
+
+
+Perfect Forwarding:
+	rvalue and lvalue arguments are passed to functions, binding to their parameters.
+	Depending on the parameter type:
+		Lvalue, argument is copied
+		Lvalue ref, argument is passed by reference
+		Rvalue ref, argument is passed by reference
+
+	Regardless of how the argument is passed to the parameter, the parameter itself is an lvalue.
+	This means that forwarding an argument through a function to another one will always end up passing an lvalue to the next function.
+
+	Perfect Forwarding allows us to get the type of the original argument and give that to the next function
+	

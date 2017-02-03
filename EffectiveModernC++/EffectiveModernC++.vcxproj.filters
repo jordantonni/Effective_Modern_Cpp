@@ -177,6 +177,9 @@
     <Text Include="Raw Pointer Drawbacks.txt">
       <Filter>Source Files\04 Smart Pointers</Filter>
     </Text>
+    <Text Include="Notes.txt">
+      <Filter>Source Files\05 Rvalues, Move Semantics &amp; Perfect Forwarding</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Widget.hpp">

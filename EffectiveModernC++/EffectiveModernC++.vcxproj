@@ -190,6 +190,7 @@
     <ClCompile Include="Widget.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Notes.txt" />
     <Text Include="Raw Pointer Drawbacks.txt" />
   </ItemGroup>
   <ItemGroup>
